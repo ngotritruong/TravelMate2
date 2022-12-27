@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TravelMate</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoibmdvdHJpdHJ1b25nIiwiYSI6ImNsYXlwN3k4OTBkaDAzc281MDExaWhiMzEifQ.HH8VpCMKvaMaA8jU195CEQ</string>
+</resources>

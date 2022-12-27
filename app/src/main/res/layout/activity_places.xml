@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlacesActivity"
+    android:background="@drawable/imagevungtau"
+    android:transitionName="background_image_transition"
+    tools:targetApi="LOLLIPOP">
+
+    <ImageView
+        android:id="@+id/second_back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="356dp"
+        android:layout_marginRight="356dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+    <TextView
+        android:id="@+id/second_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="18dp"
+        android:alpha="0.5"
+        android:text="    Located in Vung Tau, 500 m from Front Beach, Fusion Suites Vung Tau - Spa Inclusive provides accommodation with an outdoor swimming pool, free private parking, a fitness centre and a terrace. This 4-star hotel offers room service, a 24-hour front desk and free WiFi. Certain rooms at the property include a balcony with a city view.
+
+The hotel will provide guests with air-conditioned rooms with a desk, a kettle, a minibar, a safety deposit box, a flat-screen TV and a private bathroom with a bidet. Certain rooms include a kitchen with a fridge, an oven and a microwave. At Fusion Suites Vung Tau - Spa Inclusive each room comes with bed linen and towels.
+
+Guests at the accommodation can enjoy a buffet or an Asian breakfast. At Fusion Suites Vung Tau - Spa Inclusive you will find a restaurant serving Vietnamese and international cuisine. Vegan, dairy-free and gluten-free options can also be requested.
+
+Popular points of interest near the hotel include White Palace, Express Ship Harbour and Lam Son Stadium. The nearest airport is Vung Tau Airport, 5 km from Fusion Suites Vung Tau - Spa Inclusive.
+
+Couples particularly like the location — they rated it 8.8 for a two-person trip."
+        android:textColor="@color/grey"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="@+id/second_title"
+        app:layout_constraintTop_toBottomOf="@+id/second_title" />
+
+
+    <TextView
+        android:id="@+id/more_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:text="More Details"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seconf_arrow_up"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/seconf_arrow_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/second_ratingbar" />
+
+    <TextView
+        android:id="@+id/second_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="444dp"
+        android:layout_marginEnd="18dp"
+        android:text="Fusion Suites Vung Tau - Spa Inclusive"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RatingBar
+        android:id="@+id/second_ratingbar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:max="5"
+        android:numStars="5"
+        android:progressTint="@color/lavender"
+        android:rating="4.5"
+        android:stepSize="0.5"
+        app:layout_constraintStart_toStartOf="@id/second_subtitle"
+        app:layout_constraintTop_toBottomOf="@id/second_subtitle"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/second_rating_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:text="4.75"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/second_ratingbar"
+        app:layout_constraintTop_toBottomOf="@id/second_subtitle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

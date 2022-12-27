@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="5dp"
+        android:id="@+id/backHome">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/imgbackHome"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_baseline_home_24" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewProfile"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="320dp"
+            app:cardCornerRadius="46dp">
+
+            <ImageView
+                android:id="@+id/imageViewExit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:src="@drawable/userimg" />
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+    <com.mapbox.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox:mapbox_cameraTargetLat="40.7128"
+        mapbox:mapbox_cameraTargetLng="-74.0060"
+        mapbox:mapbox_cameraZoom="9.0"
+        android:layout_marginTop="70dp"
+        />
+
+</RelativeLayout>

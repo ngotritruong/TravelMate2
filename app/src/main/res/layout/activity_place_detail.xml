@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaceDetailActivity">
+
+
+    <ImageView
+        android:id="@+id/header_background"
+        android:layout_width="412dp"
+        android:layout_height="291dp"
+        android:transitionName="background_image_transition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vungtau"
+        tools:targetApi="lollipop" />
+
+    <ImageView
+        android:id="@+id/down_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+        app:layout_constraintEnd_toEndOf="@+id/header_background"
+        app:layout_constraintTop_toTopOf="@+id/header_background" />
+
+    <ScrollView
+        android:id="@+id/third_scrillview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/third_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Fusion Suites Vung Tau - Spa Inclusive"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/third_ratingbar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:max="5"
+                    android:numStars="5"
+                    android:progressTint="@color/yelow"
+                    android:rating="4.5"
+                    android:stepSize="0.5"
+                    tools:targetApi="lollipop" />
+
+                <TextView
+                    android:id="@+id/third_rating_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+
+                    android:text="4.75"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+
+                android:text="About"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/about_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+
+                android:text="Located in Vung Tau, 500 m from Front Beach, Fusion Suites Vung Tau - Spa Inclusive provides accommodation with an outdoor swimming pool, free private parking, a fitness centre and a terrace. This 4-star hotel offers room service, a 24-hour front desk and free WiFi. Certain rooms at the property include a balcony with a city view.
+
+The hotel will provide guests with air-conditioned rooms with a desk, a kettle, a minibar, a safety deposit box, a flat-screen TV and a private bathroom with a bidet. Certain rooms include a kitchen with a fridge, an oven and a microwave. At Fusion Suites Vung Tau - Spa Inclusive each room comes with bed linen and towels.
+
+Guests at the accommodation can enjoy a buffet or an Asian breakfast. At Fusion Suites Vung Tau - Spa Inclusive you will find a restaurant serving Vietnamese and international cuisine. Vegan, dairy-free and gluten-free options can also be requested.
+
+Popular points of interest near the hotel include White Palace, Express Ship Harbour and Lam Son Stadium. The nearest airport is Vung Tau Airport, 5 km from Fusion Suites Vung Tau - Spa Inclusive.
+
+Couples particularly like the location — they rated it 8.8 for a two-person trip."
+                android:textColor="@color/grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/venue_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:text="Venue Type"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/venue_type_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+                android:text="Restaurant"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/type_of_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Type of View"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/type_of_view_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+
+                android:text="It might surprise you, but this is the only
+revolving restaurant in Las Vegas. Located
+844 feet in the air, you’re bound to get
+a great view of the city with its massive
+floor-to-ceiling windows."
+                android:textColor="@color/grey"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/roadmap_button"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="16dp"
+
+
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="CH E C K   RO A D M A P"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
